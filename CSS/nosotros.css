@@ -155,8 +155,11 @@ span{
 
 
 article.row section{
-    margin-top: 20px;
+    margin-top: 20px;    
+}
 
+section.container-fluid{
+    background-color:#919999;
 }
 
 
