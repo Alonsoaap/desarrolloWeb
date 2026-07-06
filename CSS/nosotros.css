@@ -192,12 +192,12 @@ section.container-fluid{
 
 
 .row section:nth-child(odd){
-    background-color: rgb(101, 131, 230);
+    background-color: rgb(143, 147, 158);
     border-radius: 5px;
 }
 
 .row section:nth-child(even){
-    background-color: rgb(100, 189, 216);
+    background-color: rgb(111, 125, 129);
     border-radius: 5px;
 }
 .gotop {
