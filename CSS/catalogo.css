@@ -1,0 +1,753 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: GoogleSansWeb;
+    src: url("../fuentes/Google_Sans/GoogleSans-Italic.ttf");
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: GoogleSansWeb;
+    src: url("../fuentes/Google_Sans/GoogleSans-normal.ttf");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: BaskervvilleWeb;
+    src: url("../fuentes/Baskervville/Baskervville-Italic.ttf");
+    font-weight: 100 900;
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: BaskervvilleWeb;
+    src: url("../fuentes/Baskervville/Baskervville-VariableFont_wght.ttf");
+    font-weight: 100 900;
+    font-style: normal; 
+}
+
+
+@font-face {
+    font-family: OswaldWeb;
+    src: url("../fuentes/Oswald/Oswald-VariableFont_wght.ttf");
+    font-weight: 100 900;
+    font-style: normal; 
+}
+
+
+/*-----------------------------*/
+/* main y body (dimensión de pagina)>no tocar<
+/*-----------------------------*/
+body{
+
+    background-color:rgba(65, 71, 73, 0.651);
+}
+
+main{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    background-color: rgb(110, 148, 182);
+}
+
+/*-----------------------------*/
+/* Header (todo el encabezado) */
+/*-----------------------------*/
+
+section.fondo1{
+    transition: background-color 2s;
+}
+
+section.fondo1:hover{
+    background-color: rgb(149, 153, 156) !important;
+}
+
+#Theader{
+    font-family: BaskervvilleWeb, sans-serif;
+    font-style: normal;
+    transition: color 2s;
+}
+
+a#Theader:hover{
+    color: rgb(0, 0, 0) !important ;
+}
+
+/*--navegador--*/
+
+#navPri{
+    background-color:#9da9b1;
+}
+        
+
+#navPri ul li a{
+    font-family: OswaldWeb, sans-serif;
+    font-style: normal;
+    padding:8px 30px;
+}
+
+#navPri ul li a:hover{
+    background-color: rgb(187, 193, 197);
+    color: black;
+    border-radius:5px;
+}
+
+#navPri ul li a:hover{
+    background-color: rgb(187, 193, 197);
+    color: black;
+    border-radius:5px;
+}
+
+/*---------------------------------*//*---------------------------------*/
+/*-------------Ropa & Accesorios----------------*/
+/*---------------------------------*//*---------------------------------*/
+
+.Tsec{
+    font-family: BaskervvilleWeb, sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 4rem;
+    transition: color 1s;
+}
+h2.Tsec:hover{
+    color: black !important;
+}
+.text7 a{
+    font-family: OswaldWeb, sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 1.9rem;
+    position:absolute;
+    transition: box-shadow 2s;
+
+    top:95%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+}
+
+.text1 a{
+    font-family: OswaldWeb, sans-serif;
+    font-style: normal;
+    color: rgb(95, 85, 85);
+    font-size: 1.9rem;
+    position:absolute;
+    transition: box-shadow 2s;
+
+    top:90%;
+    left:16%;
+
+    transform:translate(-50%, -50%);
+
+}
+
+.text2 a{
+    font-family: OswaldWeb, sans-serif;
+    font-style: normal;
+    color: rgb(95, 85, 85);
+    font-size: 1.9rem;
+    position:absolute;
+    transition: box-shadow 2s;
+
+    top:90%;
+    left:85%;
+
+    transform:translate(-50%, -50%);
+}
+
+
+#anuncios .anuncio img{
+    width:100%;
+    max-width:1000px;
+
+    border-radius:5px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    padding: 0;
+    transition: box-shadow 1s;
+    }
+
+#anuncios .anuncio{
+    position:relative;
+    text-align: center;
+}
+
+
+#anuncios .anuncio img:hover{
+    box-shadow: 20px 10px 10px 10px rgba(0, 0, 0, 0.564);
+}
+
+#anuncios .anuncio::after{
+    content: "";
+
+    color: rgb(138, 141, 142);
+    margin: auto;
+    display: block;
+    border: solid;
+    width: 90%;
+}
+
+
+.text2 a:hover ,
+ .text7 a:hover,
+  .text9 a:hover,
+  .text1 a:hover{
+    color: rgb(210, 132, 29);
+    box-shadow: 20px 10px 10px 10px rgba(0, 0, 0, 0.564);
+}
+
+img.ima{
+    box-shadow: rgba(0, 0, 0, 0);
+    transition: margin 1s;
+}
+
+img.ima:hover{
+    margin-left: 5% !important;
+}
+
+.text9 a{
+    font-family: OswaldWeb, sans-serif;
+    font-style: normal;
+    font-size: 3rem;
+    transition: box-shadow 1s;
+}
+
+.gotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    background-color: rgba(243, 243, 243, 0.767);
+    padding: 0.5rem 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+
+.flecha{
+    align-content: center;
+    width: 25px;
+    height: 25px;
+}
+
+
+.gotop:hover{
+    background-color: #888c8f;
+}
+
+
+.contacto {
+    position: fixed;
+    right: 20px;
+    top: 82%;
+    z-index: 20;
+    background-color: rgba(243, 243, 243, 0.767);
+    padding: 0.5rem 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.telefono{
+    align-content: center;
+    width: 25px;
+    height: 25px;
+}
+
+.telefono{
+    animation: girar 2s linear infinite;
+}
+
+@keyframes girar {
+    form{
+        transform: rotateY(0deg)
+    }
+    to{
+        transform: rotateY(360deg)
+    }
+}
+
+.contacto:hover{
+    background-color: #888c8f;
+}
+
+
+/*-----------------------------*//*-----------------------------*/
+/*-----------------Footer------------*/
+/*-----------------------------*//*-----------------------------*/
+#ENDpage{
+    background-color:#565c5c;
+}        
+
+.footercontenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 24px;
+
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    width: 90%;   
+}
+
+.footer-column .contenido-p p{
+    font-family: OswaldWeb, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.footer-column .contenido-a a{
+    font-family: GoogleSansWeb, sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-column .contenido-a {
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+}
+
+.footer-column .contenido-a a:visited{
+    color: rgb(62, 207, 74);
+}
+
+
+/*-----------------------------------------------/*-------------------------------/*-------------*//*-----------------------------------------------/*-------------------------------/*-------------*/
+/*-----------------------------------------------/*-------------------------------/*-------------*//*-----------------------------------------------/*-------------------------------/*-------------*/
+/*-----------------------------------------------/*-------------------------------*/
+@media (max-width: 320px) {
+
+    main{
+        width: 100%;
+    }
+    
+    #Theader{
+        font-size: 50px;
+    }
+
+    
+    
+    section .Tsec{
+        font-size: 30px;
+    }
+
+    .text1 a, .text2 a, .text7 a{
+        font-size: 1rem;
+    }
+
+    .ima{
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        margin-left: 10px;
+
+    }
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 78%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    
+    main{
+        width: 100%;
+        
+    }
+    
+    #Theader{
+        font-size: 55px;
+    }
+
+    
+    section .Tsec{
+        font-size: 40px;
+    }
+
+    .text1 a, .text2 a, .text7 a{
+        font-size: 1rem;
+    }
+
+    .ima{
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        margin-left: 10px;
+
+    }
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 78%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+
+}    
+
+
+/* Dispositivos móviles medianos (<=576px) */
+@media (min-width: 481px) and (max-width: 576px) {
+
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 55px;
+    }
+    
+    section .Tsec{
+        font-size: 40px;
+    }
+
+    .text1 a, .text2 a, .text7 a{
+        font-size: 1.4rem;
+    }
+    .ima{
+        text-align: center;
+        justify-content: center;
+        margin-left: 10px;
+
+    }
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 78%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+
+    
+
+}
+
+/* Tablets (>=577px y <=768px) */
+@media (min-width: 577px) and (max-width: 768px){
+    main{
+        width: 100%;
+    }
+    
+    #Theader{
+        font-size: 55px;
+    }
+    
+    section .Tsec{
+        font-size: 50px;
+    }
+
+    .text1 a, .text2 a, .text7 a{
+        font-size: 1.4rem;
+    }
+
+    
+    .ima{
+        text-align: center;
+        justify-content: center;
+        margin-left: 10px;
+
+    }
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 78%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+
+}
+
+/* Laptops pequeñas (≥769px y ≤992px) */
+@media (min-width: 769px) and (max-width: 992px){
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 55px;
+    }
+    
+    section .Tsec{
+        font-size: 50px;
+    }
+
+    .text1 a, .text2 a, .text7 a{
+        font-size: 1.4rem;
+    }
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 78%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+
+}
+
+/* Laptops grandes (≥993px y ≤1200px) */
+@media (min-width: 993px) and (max-width: 1200px){
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 65px;
+    }
+    
+    section .Tsec{
+        font-size: 50px;
+    }
+
+    .text1 a, .text2 a, .text7 a{
+        font-size: 2rem;
+    }
+
+    #anuncios2{
+        max-width: 992px;
+        width: 90%;
+        
+        margin-left: 100px;
+    } 
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 77%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+
+}
+
+
+/* Escritorios grandes (≥1201px) */
+@media (min-width: 1201px) {
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 65px;
+    }
+    
+    section .Tsec{
+        font-size: 50px;
+    }
+
+    .text1 a, .text2 a, .text7 a{
+        font-size: 2rem;
+    }
+
+    #anuncios2{
+        max-width: 992px;
+        width: 90%;
+        
+        margin-left: 100px;
+    } 
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 77%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+
+}

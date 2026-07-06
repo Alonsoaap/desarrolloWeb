@@ -1,0 +1,1220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@font-face {
+    font-family: GoogleSansWeb;
+    src: url("../fuentes/Google_Sans/GoogleSans-Italic.ttf");
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: GoogleSansWeb;
+    src: url("../fuentes/Google_Sans/GoogleSans-normal.ttf");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: BaskervvilleWeb;
+    src: url("../fuentes/Baskervville/Baskervville-Italic.ttf");
+    font-weight: 100 900;
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: BaskervvilleWeb;
+    src: url("../fuentes/Baskervville/Baskervville-VariableFont_wght.ttf");
+    font-weight: 100 900;
+    font-style: normal; 
+}
+
+
+@font-face {
+    font-family: OswaldWeb;
+    src: url("../fuentes/Oswald/Oswald-VariableFont_wght.ttf");
+    font-weight: 100 900;
+    font-style: normal; 
+}
+
+
+
+/*-----------------------------*/
+/* main y body (dimensión de pagina)>no tocar<
+/*-----------------------------*/
+
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    background-color: rgba(114, 119, 124, 0.24);
+}
+
+/*-----------------------------*/
+/* Header (todo el encabezado) */
+/*-----------------------------*/
+
+section.fondo1{
+    transition: background-color 2s;
+}
+
+section.fondo1:hover{
+    background-color: rgb(149, 153, 156) !important;
+}
+
+#Theader{
+    font-family: BaskervvilleWeb, sans-serif;
+    font-style: normal;
+    transition: color 2s;
+}
+
+a#Theader:hover{
+    color: rgb(0, 0, 0) !important ;
+}
+
+/*--navegador--*/
+
+#navPri{
+    background-color:#9da9b1;
+}
+        
+
+#navPri ul li a{
+    font-family: OswaldWeb, sans-serif;
+    font-style: normal;
+    padding:8px 30px;
+}
+
+#navPri ul li a:hover{
+    background-color: rgb(187, 193, 197);
+    color: black;
+    border-radius:5px;
+}
+
+
+/*-----------------------------*//*-----------------------------*/
+/*--Portada y contenido--*/
+/*-----------------------------*//*-----------------------------*/
+.portada{
+    position:relative;
+}
+
+.portada img{
+    max-width:1200px;
+    width:100%;
+    z-index: -1;
+}
+
+.text h2{
+    font-family: BaskervvilleWeb, sans-serif;
+    font-style: italic;
+        
+    position:absolute;
+    top:50%;
+    left:50%;
+    font-size:3rem;
+    margin-bottom:20px;
+
+    transform:translate(-50%, -50%);
+}
+
+.text h2:hover{
+    color: rgb(59, 68, 71);
+}
+        
+        
+.text a{
+    font-family: OswaldWeb, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 1.5rem;
+    position:absolute;
+    top:95%;
+    left:50%;
+
+    transform:translate(-50%, -50%);          
+}
+
+.text a:hover{
+    color: rgb(59, 68, 71);
+}
+
+/*-----------------------------*//*-----------------------------*/
+/*-------Nueva Coleccion---------*/
+/*-----------------------------*//*-----------------------------*/
+
+.Tsec{
+    font-family: BaskervvilleWeb, sans-serif;
+    font-style: normal;
+    text-decoration:underline;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(100, 95, 95);
+    transition: color 2s;
+}
+
+.Tsec::before{
+    content: "";
+    background-color: #636161;
+    display:flex;
+    width: 90%;
+    height: 4px;
+    margin: auto;
+    
+}
+
+.Tsec::after{
+    content: "";
+    background-color: #636161;
+    display:flex;
+    width: 90%;
+    height: 4px;
+    margin: auto;
+    
+}
+.Tsec:hover{
+    color: rgb(218, 8, 8);
+}
+
+
+
+.anuncio img{
+    width:100%;
+    max-width:1000px;
+    border-radius:5px;
+    margin-top: 30px;
+    transition: transform 2s;
+}
+
+.anuncio img:hover{
+    transform: scale(90%);
+}
+        
+.anuncio{
+    position:relative;
+    text-align: center;
+}
+            
+.text1 a{
+    font-family: OswaldWeb, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size:1.5rem;
+    position:absolute;
+
+    top:85%;
+    left:15%;
+
+    transform:translate(-50%, -50%);
+    transition: color 2s;
+}
+
+
+.text2 a{
+    font-family: OswaldWeb, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size:1.5rem;
+    position:absolute;
+    
+    top:20%;
+    left:85%;
+    
+    transform:translate(-50%, -50%);
+    transition: color 2s;
+}
+
+.text3 a{
+    font-family: OswaldWeb, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size:1.5rem;
+    position:absolute;
+    
+    top:80%;
+    left:50%;
+    
+    transform:translate(-50%, -50%);
+    transition: color 2s;
+}
+
+.text1 a:hover{
+    color: #565c5c;
+}
+.text2 a:hover{
+    color: #565c5c;
+}
+.text3 a:hover{
+    color: #565c5c;
+}
+
+/*-----------------------------*//*-----------------------------*/
+/*-----------Ofertas----------*/
+/*-----------------------------*//*-----------------------------*/
+        
+.OFF .texth4{
+    font-family: GoogleSansWeb, sans-serif;
+    font-style: normal;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.texth4::before,
+.texth4::after{
+    content: "10% off 20% off 30% off 10% off 20% off 30% off 10% off 20% off 10% off 20% off 30%";
+    color: white;
+    text-align: center;
+
+    background-color: #565c5c;
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+
+/*--Cuadros >NO TOCAR #CUADROS<---*/
+
+#cuadros {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    display: grid;
+    gap: 24px;
+
+    width:90%;
+    max-width:950px;
+    margin:auto;
+}
+
+.card2{
+    margin-top: 30px;
+    background: rgba(33, 34, 31, 0.842);
+    border-radius: 3px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.548);
+    overflow: hidden;
+    text-align: center;
+
+    width: 900px;
+    max-width:300px;
+
+}
+
+.card2{
+    transition: transform 2s;
+}
+
+.card2:hover{
+    transform: scale(110%)
+}
+
+.card-img {
+    height: 250px;
+    display:flex;
+    
+    justify-content: center;
+    font-size: 4rem;
+
+    transition: background 2s;
+}
+.card-img:hover{
+    background: #818385b6;
+    transform: scale(95%);
+}
+
+.card-img img {
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    
+    transition: transform 2s;
+}
+
+.card-body2{
+    color: white;
+    font-size: 1.5rem;
+    padding: 16px;
+}
+
+.precioBase{
+    color: #aabebe;
+}
+
+.card-body2 h5{
+    font-family: GoogleSansWeb, sans-serif;
+    font-style: italic;
+}
+
+.card2:hover{
+    padding: 1px 1px;
+    border-radius: 5px;
+}
+.card2 .card-img:hover{
+    padding: auto;
+    background-color: rgb(176, 178, 180);
+}
+
+.card2 .card-img img:hover{
+    transform: scale(90%);
+}
+
+.gotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    background-color: rgba(243, 243, 243, 0.767);
+    padding: 0.5rem 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+
+.flecha{
+    align-content: center;
+    width: 25px;
+    height: 25px;
+}
+
+
+.gotop:hover{
+    background-color: #888c8f;
+}
+
+
+.contacto {
+    position: fixed;
+    right: 20px;
+    top: 78%;
+    z-index: 20;
+    background-color: rgba(243, 243, 243, 0);
+    padding: 0.5rem 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.telefono{
+    align-content: center;
+    width: 25px;
+    height: 25px;
+}
+
+.telefono{
+    animation: girar 2s linear infinite;
+}
+
+@keyframes girar {
+    form{
+        transform: rotateY(0deg)
+    }
+    to{
+        transform: rotateY(360deg)
+    }
+}
+
+.contacto:hover{
+    background-color: #888c8f;
+}
+
+/*-----------------------------*//*-----------------------------*/
+/*-----------------Footer------------*/
+/*-----------------------------*//*-----------------------------*/
+#ENDpage{
+    background-color:#565c5c;
+}        
+
+.footercontenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 24px;
+
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    width: 90%;   
+}
+
+.footer-column .contenido-p p{
+    font-family: OswaldWeb, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.footer-column .contenido-a a{
+    font-family: GoogleSansWeb, sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-column .contenido-a {
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+}
+
+.footer-column .contenido-a a:visited{
+    color: rgb(62, 207, 74);
+}
+
+
+/*-------------------------------------------*//*-----------------------------------------------/*-------------------------------/*-------------*/
+/*-------------------------------------------*//*-----------------------------------------------/*-------------------------------/*-------------*/
+
+
+@media (max-width: 320px) {
+
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 35px;
+    }
+
+    .text h2{
+        font-size: 1.5rem;
+    }
+
+    .text a{
+        font-size: 0.5rem;
+        top: 120px;
+    }
+
+    .servicios .card .card-img img{
+        font-size: 0.7rem;
+    }
+
+    section .Tsec{
+        font-size: 2rem;
+    }
+
+    .anuncios .anuncio .text2 a{
+        top: 50px;
+        font-size: 1.2rem;
+    }
+
+    .anuncios .anuncio .text1 a,
+    .anuncios .anuncio .text3 a{
+        font-size: 1.2rem;
+    }
+
+    .texth4 h4{
+        font-size: 1.5rem;
+    }
+
+    .texth4::before ,
+    .texth4::after{
+        content: "10% off 20% off 30%";
+        color: white;
+        text-align: center;
+    
+        background-color: #565c5c;
+        display: block;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+   #cuadros{
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    justify-content: center;
+    display: grid;
+    gap: 24px;
+
+    width:90%;
+    margin:auto;
+   }
+
+    .card2{
+        width: 130px;
+        height: auto;
+    }
+
+    .card-img{
+        background-color: black;
+        width: 130px;
+        height: auto;
+    }
+
+    .card-img img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .card-body2{
+        font-size: 1rem;
+    }
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 78%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+
+
+}
+
+/* Pequeñas (<=480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+     main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 1.7rem;
+    }
+
+    .text h2{
+        font-size: 1.5rem;
+    }
+
+    .text a{
+        font-size: 0.5rem;
+        top: 120px;
+    }
+
+    .servicios .card .card-img img{
+        font-size: 0.7rem;
+    }
+
+    section .Tsec{
+        font-size: 2rem;
+    }
+
+    .anuncios .anuncio .text2 a{
+        top: 50px;
+        font-size: 1.2rem;
+    }
+
+    .anuncios .anuncio .text1 a,
+    .anuncios .anuncio .text3 a{
+        font-size: 1.2rem;
+    }
+
+    .texth4 h4{
+        font-size: 1.5rem;
+    }
+
+    .texth4::before ,
+    .texth4::after{
+        content: "10% off 20% off 30%";
+        color: white;
+        text-align: center;
+    
+        background-color: #565c5c;
+        display: block;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+   #cuadros{
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    justify-content: center;
+    display: grid;
+    gap: 24px;
+
+    width:90%;
+    margin:auto;
+   }
+
+    .card2{
+        width: 130px;
+        height: auto;
+    }
+
+    .card-img{
+        background-color: black;
+        width: 130px;
+        height: auto;
+    }
+
+    .card-img img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .card-body2{
+        font-size: 1rem;
+    }
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 82%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+}
+/*
+/* Dispositivos móviles medianos (<=576px) */
+@media (min-width: 481px) and (max-width: 576px) {
+    main{
+        width: 100%;
+    }
+    
+    #Theader{
+        font-size: 55px;
+    }
+
+    .text h2{
+        font-size: 2rem;
+    }
+
+    .text a{
+        font-size: 0.8rem;
+        
+    }
+
+    section .Tsec{
+        font-size: 2rem;
+    }
+
+    .anuncios .anuncio .text2 a{
+        top: 50px;
+        font-size: 1.2rem;
+    }
+
+    .anuncios .anuncio .text1 a,
+    .anuncios .anuncio .text3 a{
+        font-size: 1.2rem;
+    }
+
+    .texth4 h4{
+        font-size: 1.5rem;
+    }
+
+    .texth4::before ,
+    .texth4::after{
+        content: "10% off 20% off 30% 10% off 20% off 30% 10% off 20% off 30%";
+        color: white;
+        text-align: center;
+    
+        background-color: #565c5c;
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+   #cuadros{
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    justify-content: center;
+    display: grid;
+    gap: 24px;
+
+    width:90%;
+    margin:auto;
+   }
+
+    .card2{
+        width: 130px;
+        height: auto;
+    }
+
+    .card-img{
+        background-color: black;
+        width: 130px;
+        height: auto;
+    }
+
+    .card-img img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .card-body2{
+        font-size: 1rem;
+    }
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 78%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+}
+
+/* Tablets (>=577px y <=768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 60px;
+    }
+ 
+    .text h2{
+        font-size: 50px;
+    }
+
+    .text a{
+        font-size: 1.5rem;
+        
+    }
+
+    section .Tsec{
+        font-size: 50px;
+    }
+    .anuncios .anuncio .text1 a,
+    .anuncios .anuncio .text2 a,
+    .anuncios .anuncio .text3 a{
+        font-size: 2rem;
+    }
+
+    .texth4 h4{
+        font-size: 2.5rem;
+    }
+
+    .texth4::before ,
+    .texth4::after{
+        content: "10% off 20% off 30% 10% off 20% off 30% 10% off 20% off 30% 10% off 20% off 30%";
+        color: white;
+        text-align: center;
+    
+        background-color: #565c5c;
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+   #cuadros{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: center;
+    display: grid;
+    gap: 24px;
+
+    width:90%;
+    margin:auto;
+   }
+
+    .card2{
+        width: 150px;
+        height: auto;
+    }
+
+    .card-img{
+        background-color: black;
+        width: 150px;
+        height: auto;
+    }
+
+    .card-img img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-body2{
+        font-size: 1.3rem;
+    }
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 78%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+
+}
+
+/* Laptops pequeñas (≥769px y ≤992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 70px;
+    }
+
+    .text h2,
+    section .Tsec,
+    .texth4 h4{
+        font-size: 60px;
+    }
+
+    .text a{
+        font-size: 1.9rem;
+        
+    }
+    .anuncios .anuncio .text1 a,
+    .anuncios .anuncio .text2 a,
+    .anuncios .anuncio .text3 a{
+        font-size: 2.5rem;
+    }
+
+
+    .texth4::before ,
+    .texth4::after{
+        content: "10% off 20% off 30% 10% off 20% off 30% 10% off 20% off 30% 10% off 20% off 30%";
+        color: white;
+        text-align: center;
+    
+        background-color: #565c5c;
+        display: block;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+   #cuadros{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    display: grid;
+    gap: 24px;
+
+    width:90%;
+    max-width: 950px;
+    margin:auto;
+   }
+
+    .card2{
+        width: 250px;
+        height: auto;
+    }
+
+    .card-img{
+        background-color: black;
+        width: 250px;
+        height: auto;
+    }
+
+    .card-img img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-body2{
+        font-size: 1.5rem;
+    }
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 77%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1.6rem;
+    }
+
+}
+
+/* Laptops grandes (≥993px y ≤1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 70px;
+    }    
+
+    .text h2,
+    section .Tsec,
+    .texth4 h4{
+        font-size: 60px;
+    }
+
+    .text a{
+        font-size: 1.9rem;
+        
+    }
+    .anuncios .anuncio .text1 a,
+    .anuncios .anuncio .text2 a,
+    .anuncios .anuncio .text3 a{
+        font-size: 2.5rem;
+    }
+
+
+    .texth4::before ,
+    .texth4::after{
+        content: "10% off 20% off 30% 10% off 20% off 30% 10% off 20% off 30% 10% off 20% off 30%";
+        color: white;
+        text-align: center;
+    
+        background-color: #565c5c;
+        display: block;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+   #cuadros{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    display: grid;
+    gap: 24px;
+
+    width:90%;
+    max-width: 950px;
+    margin:auto;
+   }
+
+    .card2{
+        width: 250px;
+        height: auto;
+    }
+
+    .card-img{
+        background-color: black;
+        width: 250px;
+        height: auto;
+    }
+
+    .card-img img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-body2{
+        font-size: 1.5rem;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1.6rem;
+    }
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 82%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+
+}
+
+/* Escritorios grandes (≥1201px) */
+@media (min-width: 1201px) {
+    
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 70px;
+    }
+
+    .text h2,
+    section .Tsec,
+    .texth4 h4{
+        font-size: 60px;
+    }
+
+    .text a{
+        font-size: 1.9rem;
+        
+    }
+    .anuncios .anuncio .text1 a,
+    .anuncios .anuncio .text2 a,
+    .anuncios .anuncio .text3 a{
+        font-size: 2.5rem;
+    }
+
+    .texth4::before ,
+    .texth4::after{
+        content: "10% off 20% off 30% 10% off 20% off 30% 10% off 20% off 30% 10% off 20% off 30%";
+        color: white;
+        text-align: center;
+    
+        background-color: #565c5c;
+        display: block;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+   #cuadros{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    display: grid;
+    gap: 24px;
+
+    width:90%;
+    max-width: 950px;
+    margin:auto;
+   }
+
+    .card2{
+        width: 250px;
+        height: auto;
+    }
+
+    .card-img{
+        background-color: black;
+        width: 250px;
+        height: auto;
+    }
+
+    .card-img img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-body2{
+        font-size: 1.5rem;
+    }
+
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 80%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1.6rem;
+    }
+
+    
+}

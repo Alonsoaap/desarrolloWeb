@@ -1,0 +1,615 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: GoogleSansWeb;
+    src: url("../fuentes/Google_Sans/GoogleSans-Italic.ttf");
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: GoogleSansWeb;
+    src: url("../fuentes/Google_Sans/GoogleSans-normal.ttf");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: BaskervvilleWeb;
+    src: url("../fuentes/Baskervville/Baskervville-Italic.ttf");
+    font-weight: 100 900;
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: BaskervvilleWeb;
+    src: url("../fuentes/Baskervville/Baskervville-VariableFont_wght.ttf");
+    font-weight: 100 900;
+    font-style: normal; 
+}
+
+
+@font-face {
+    font-family: OswaldWeb;
+    src: url("../fuentes/Oswald/Oswald-VariableFont_wght.ttf");
+    font-weight: 100 900;
+    font-style: normal; 
+}
+
+
+/*-----------------------------*/
+/* main y body (dimensión de pagina)>no tocar<
+/*-----------------------------*/
+body{
+
+    background-color:rgba(65, 71, 73, 0.651);
+}
+
+main{
+    width:auto;
+    max-width:1200px;
+    margin:auto;
+}
+
+/*-----------------------------*/
+/* Header (todo el encabezado) */
+/*-----------------------------*/
+
+
+section.fondo1{
+    transition: background-color 2s;
+}
+
+section.fondo1:hover{
+    background-color: rgb(149, 153, 156) !important;
+}
+
+#Theader{
+    font-size: 55px;
+    font-family: BaskervvilleWeb, sans-serif;
+    font-style: normal;
+    transition: color 2s;
+}
+
+a#Theader:hover{
+    color: rgb(0, 0, 0) !important ;
+}
+
+/*--navegador--*/
+
+#navPri{
+    background-color:#9da9b1;
+}
+        
+
+#navPri ul li a{
+    font-family: OswaldWeb, sans-serif;
+    font-style: normal;
+    padding:8px 30px;
+}
+
+#navPri ul li a:hover{
+    background-color: rgb(187, 193, 197);
+    color: black;
+    border-radius:5px;
+}
+
+/*--------------------------------------Main--------------*/
+
+.dona{
+    width: 100%;
+}
+
+.navidad{
+    width: 100%;
+}
+
+.otoño{
+    width: 100%;
+}
+
+.text h2,
+ .text1 h3,
+  .text2 h4{
+    font-family: BaskervvilleWeb, sans-serif;
+    font-style: italic;
+    font-size:4rem;
+}
+
+.text1 p{
+    font-family: BaskervvilleWeb, sans-serif;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.gotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    background-color: rgba(243, 243, 243, 0.767);
+    padding: 0.5rem 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+
+.flecha{
+    align-content: center;
+    width: 25px;
+    height: 25px;
+}
+
+
+.gotop:hover{
+    background-color: #888c8f;
+}
+
+
+.contacto {
+    position: fixed;
+    right: 20px;
+    top: 78%;
+    z-index: 20;
+    background-color: rgba(243, 243, 243, 0.767);
+    padding: 0.5rem 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.telefono{
+    align-content: center;
+    width: 25px;
+    height: 25px;
+}
+
+.telefono{
+    animation: girar 2s linear infinite;
+}
+
+@keyframes girar {
+    form{
+        transform: rotateY(0deg)
+    }
+    to{
+        transform: rotateY(360deg)
+    }
+}
+
+.contacto:hover{
+    background-color: #888c8f;
+}
+
+
+/*-----------------------------*//*-----------------------------*/
+/*-----------------Footer------------*/
+/*-----------------------------*//*-----------------------------*/
+#ENDpage{
+    background-color:#565c5c;
+}        
+
+.footercontenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 24px;
+
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    width: 90%;   
+}
+
+.footer-column .contenido-p p{
+    font-family: OswaldWeb, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.footer-column .contenido-a a{
+    font-family: GoogleSansWeb, sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-column .contenido-a {
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+}
+
+.footer-column .contenido-a a:visited{
+    color: rgb(62, 207, 74);
+}
+
+/*----------------------------------------*//*----------------------------------------*//*----------------------------------------*/
+/*----------------------------------------*//*----------------------------------------*//*----------------------------------------*/
+/*----------------------------------------*//*----------------------------------------*//*----------------------------------------*/
+
+@media (min-width: 321px) and (max-width: 480px) {
+    
+    main{
+        width: 100%;
+    }
+
+    .card{
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .card img{
+        max-width: 480px;
+        width: 100%;
+        height: 500px;
+    }
+
+    .text h2,
+     .text1 h3,
+     .text2 h4{
+        font-size: 30px;
+    }
+    
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 78%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+       
+}
+
+@media (max-width: 320px){
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 50px;
+    }
+    
+        .text h2,
+     .text1 h3,
+     .text2 h4{
+        font-size: 30px;
+    }
+    
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 78%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+        
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+
+}
+
+/* Dispositivos móviles medianos (<=576px) */
+@media (min-width: 481px) and (max-width: 576px){
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 50px;
+    }    
+
+    .text h2,
+     .text1 h3,
+     .text2 h4{
+        font-size: 30px;
+    }
+    
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 78%;
+        right: 40px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+
+}
+
+/* Tablets (>=577px y <=768px) */
+@media (min-width: 577px) and (max-width: 768px){
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 50px;
+    }
+
+    .text h2,
+     .text1 h3,
+     .text2 h4{
+        font-size: 50px;
+    }
+    .gotop{
+        margin-right: 20px;
+    }
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 78%;
+        right: 40px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+    
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+    
+    
+    
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+    
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+    
+}
+
+/* Laptops pequeñas (≥769px y ≤992px) */
+@media (min-width: 769px) and (max-width: 992px){
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 55px;
+    }
+    
+    .text h2,
+    .text1 h3,
+    .text2 h4{
+        font-size: 50px;
+    }
+    
+    
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 88%;
+        right: 40px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .gotop{
+        margin-right: 20px;
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+
+}
+
+/* Laptops grandes (≥993px y ≤1200px) */
+@media (min-width: 993px) and (max-width: 1200px){
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 50px;
+    }
+
+    .text h2,
+     .text1 h3,
+     .text2 h4{
+        font-size: 50px;
+    }
+    
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 82%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+    
+    
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+}
+
+/* Escritorios grandes (≥1201px) */
+@media (min-width: 1201px){
+    main{
+        width: 100%;
+    }
+    
+    header .fondo1 #Theader{
+        font-size: 55px;
+    }
+
+        .text h2,
+     .text1 h3,
+     .text2 h4{
+        font-size: 50px;
+    }
+    
+    .telefono{
+        position: fixed;
+        bottom: 20px;
+        top: 82%;
+        right: 20px;
+        z-index: 20;
+        background-color: rgba(243, 243, 243, 0.767);
+        padding: 0.5rem 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    .telefono{
+        align-content: center;
+        width: 45px;
+        height: 45px;
+    }
+    
+
+    .footercontenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-column .contenido-a a,
+    .footer-column .contenido-p p{
+        font-size: 1rem;
+    }
+}
+ 
+
+       
