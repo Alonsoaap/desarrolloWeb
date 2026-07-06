@@ -145,6 +145,7 @@ a#Theader:hover{
     align-content: center;
     width: 25px;
     height: 25px;
+    animation: girarZ 2s linear infinite;
 }
 
 
@@ -183,6 +184,50 @@ a#Theader:hover{
     to{
         transform: rotateY(360deg)
     }
+}
+
+@keyframes girarZ {
+    form{
+        transform: rotateZ(0deg)
+    }
+    to{
+        transform: rotateZ(360deg)
+    }
+}
+
+@keyframes cambiar_color{
+    from{
+        color: white;
+    }
+    to{
+        color: #021c30 ;
+    }
+
+}
+
+@keyframes escala{
+    0%{
+        scale: calc(90%);
+    }
+    50%{
+        scale: calc(100%);
+    }
+    100%{
+        scale: calc(90%);
+    }
+    
+}
+
+@keyframes RL {
+  0% {
+    transform: translateX(0); 
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .contacto:hover{

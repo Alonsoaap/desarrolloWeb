@@ -180,6 +180,7 @@ h2.sub-titulo::before{
     align-content: center;
     width: 25px;
     height: 25px;
+    animation: girarZ 2s linear infinite;
 }
 
 
